@@ -1,11 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+import "./styles/index.css";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import { Routes, BrowserRouter, Route } from "react-router";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<AboutPage />} />
+    </Routes>
+  </BrowserRouter>
 );

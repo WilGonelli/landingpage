@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  background-color: rgb(115, 147, 236);
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.containerLogo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.logo {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.navbar {
+  display: flex;
+  gap: 6px;
+}
+
+.link {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 18px;
+  font-weight: bold;
+}
